@@ -1,0 +1,45 @@
+<ion-header>
+
+    <ion-navbar hcolor>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="Login()" *ngIf="Ocultar1">
+                            <ion-icon name="person"></ion-icon>
+                        </button>
+        </ion-buttons>
+        <ion-title text-left >Mako Mandaos</ion-title>
+
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card *ngIf="infocard">
+        <ion-card-header>
+            <h2>Espacio Solicitudes</h2>
+        </ion-card-header>
+        <ion-card-content>
+            En este espacio se mostraran las veces que has solicitado un servicio Si este mensaje aparece es por que no has iniciado sesion por favor, presionar el icono
+            <ion-icon name="person"></ion-icon> en la parte superior derecha de la pantalla.
+        </ion-card-content>
+    </ion-card>
+    <ion-list no-lines>
+        <ion-list>
+            <ion-item *ngFor="let item of makos" (click)="makochat(item)">
+                <ion-avatar item-left>
+                    <img src={{item.photoURL}}>
+                </ion-avatar>
+                <h3>{{item.displayName}}</h3>
+                <ion-note>
+                    <h5>{{item.time| date: 'dd/MM/yyyy H:mm' }}</h5>
+                </ion-note>
+            </ion-item>
+        </ion-list>
+        <ion-fab class="fabbuttom" bottom end *ngFor="let key of filteredusers">
+            <button ion-fab color="mako" (click)="sendreq(key)">
+                 <ion-icon name="send"></ion-icon>                
+            </button>
+        </ion-fab>
+    </ion-list>
+</ion-content>

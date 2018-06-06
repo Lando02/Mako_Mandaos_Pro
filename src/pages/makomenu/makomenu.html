@@ -1,0 +1,29 @@
+<ion-header>
+
+    <ion-navbar hcolor>
+        <ion-title text-left>Mako Mandaos</ion-title>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item (click)="perfil()" *ngIf="Operfil">
+            <ion-icon name="person" item-start color="mako"></ion-icon>
+            Mi Perfil
+        </ion-item>
+        <ion-item (click)="logout()" *ngIf="btnclose">
+            <ion-icon name="power" item-start color="mako"></ion-icon>
+            Cerrar Sesion
+        </ion-item>
+        <ion-item>
+            <ion-buttons>
+                <button ion-button full (click)="Login()" *ngIf="Ocultar1">
+                              <ion-icon name="person"></ion-icon> &nbsp; Iniciar sesión o registrarse                        
+                          </button>
+            </ion-buttons>
+        </ion-item>
+    </ion-list>
+</ion-content>

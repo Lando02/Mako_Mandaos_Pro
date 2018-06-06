@@ -1,0 +1,32 @@
+<ion-header>
+<ion-buttons start>
+        <button (click)="goback()" ion-button icon-only clear>
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-header>
+<ion-content class="background">
+    <ion-card-header>
+           
+        <ion-card-title>Iniciar Sesion</ion-card-title>
+    </ion-card-header>
+    <ion-card>
+        <ion-card-content>
+            <ion-list no-line>
+                <ion-item>
+                    <ion-label floating>Correo Electronico</ion-label>
+                    <ion-input type="email" [(ngModel)]="credentials.email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Contraseña</ion-label>
+                    <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
+                </ion-item><br>
+                <button ion-button round outline color="light" (click)="signIn()">Iniciar Sesion</button><br>
+                <button ion-button block color="transparent" (click)="signUp()">    
+                    Registrarse
+                   </button><br>
+                <a (click)="passwordreset()"> <b>¿Olvidaste tu contraseña? </b> </a>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

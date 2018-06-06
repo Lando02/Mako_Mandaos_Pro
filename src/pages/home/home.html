@@ -1,0 +1,52 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="LoginSingup()" *ngIf="Ocultar1">
+                        <ion-icon name="person"></ion-icon>
+                    </button>
+        </ion-buttons>
+        <ion-title text-left>Mako Mandaos</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list no-line>
+        <ion-card>
+            <ion-card-header>
+                <h1>¡Nuestros Mandaos!</h1>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list>
+                    <ion-item (click)="enterprise()">
+                        <ion-icon name="document" item-start color="mako"></ion-icon>
+                        Empresariales
+                    </ion-item>
+                    <ion-item (click)="personal()">
+                        <ion-icon name="contacts" item-start color="mako"></ion-icon>
+                        Personales
+                    </ion-item>
+                    <ion-item (click)="massive()">
+                        <ion-icon name="car" item-start color="mako"></ion-icon>
+                        Masivos
+                    </ion-item>
+                    <ion-item (click)="contact()">
+                        <ion-icon name="information-circle" item-start color="mako"></ion-icon>
+                        ¡Que mandao no vez aqui <br> cuentanos!
+                    </ion-item>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+        <p>Para solicitar tu mandao dezplazate a la pestaña de solicitudes por favor y presiona en
+            <ion-icon name="send"></ion-icon>
+        </p>
+    </ion-list>
+</ion-content>

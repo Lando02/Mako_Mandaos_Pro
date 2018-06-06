@@ -1,0 +1,8 @@
+{
+  "name": "MakoMandaos2",
+  "app_id": "6b57c1c9",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

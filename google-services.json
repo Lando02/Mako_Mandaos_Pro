@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "798333780763",
+    "firebase_url": "https://makomandaosdb.firebaseio.com",
+    "project_id": "makomandaosdb",
+    "storage_bucket": "makomandaosdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798333780763:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798333780763-qt6t6g1hj7dkq6jtsup6hfpsmnsts585.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfqNVjjqTCPs5CTkG1bB6aZYF5z3LLaME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
